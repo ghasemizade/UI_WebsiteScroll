@@ -18,8 +18,8 @@
         </ul>
     </header>
     <section>
-        <img src="./images/stars1.png" alt="stars">
-        <img src="./images/moon.png" alt="moon">
+        <img src="./images/stars1.png" alt="stars" id="stars">
+        <img src="./images/moon.png" alt="moon" id="moon">
         <img src="./images/mountain_behind.png" alt="mountain_behind" id="mountains_behind">
         <h2 id="text">Moon Lights</h2>
         <a href="#sec" id="btn">Explore</a>
@@ -65,6 +65,12 @@
         let text = document.getElementById('text');
         let btn = document.getElementById('btn');
         let mountains_front = document.getElementById('mountains_behind');
+
+        window.addEventListener('scroll', function() {
+            let value = window.scrollY;
+            stars.style.left = value * 0.25 + 'px';
+            moon.style.top = value * 0.5 + 'px';
+        })
     </script>
 </body>
 </html>
