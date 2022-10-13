@@ -52,8 +52,7 @@ header ul li a.active
 section img{
     width: 100%;
     height: 100%;
-    /* background-position: center;
+    background-position: center;
     background-repeat: no-repeat;
-    background-size: cover; */
-    
+    background-size: cover;
 }
